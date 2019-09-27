@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+01302019.NASDAQ_ITCH50
+01302019.NASDAQ_ITCH50.gz
+source/parsed_data.csv
