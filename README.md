@@ -15,4 +15,8 @@ filename:
 
 2. `python setup.py build_ext --inplace`
 
+<<<<<<< HEAD:README.md
 3. `python VWAP.pyx`
+=======
+3. `python VWAP.pyx`
+>>>>>>> bd0a1f7fc227944757c0a900ebfd4f0c61008340:source/README.md
