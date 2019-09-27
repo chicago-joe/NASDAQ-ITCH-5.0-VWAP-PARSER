@@ -28,9 +28,9 @@ class parser():
         time = time.strftime('%H:%M:%S')
         return time
 
-    
+
     # This function calculates VWAP for every trade for every hour.
-    
+
     def calculate_vwap(self, df):
         df['amount'] = df['price'] * df['volume']
         df['time'] = pd.to_datetime(df['time'])
@@ -39,12 +39,12 @@ class parser():
         df['vwap'] = df['vwap'].round(2)
         df = df.reset_index()
         df['time'] = df.apply(lambda x: str(x['time']) + ':00:00', axis=1)
-        df['stock']=df['symbol'].str.decode("utf-8")        
+        df['stock']=df['symbol'].str.decode("utf-8")
         df = df[['time', 'stock', 'vwap']]
         return df
 
-    # This function performs data manipulation before calculating VWAP. Also stores results in txt file. 
-    
+    # This function performs data manipulation before calculating VWAP. Also stores results in txt file.
+
     def extractData(self, message):
         trades = self.tradeMessage(message)
         parsed_data=[trades[3],trades[7],trades[8],trades[6]]
@@ -63,7 +63,7 @@ class parser():
             self.temp.append(parsed_data)
 
     # This function deals with trade messages. It decodes the 43 byte trade message and extracts details like trade value, time and price.
-    
+
     def tradeMessage(self, msg):
         msg_type = b'P'
         temp = struct.unpack('>4s6sQcI8cIQ', msg)
@@ -77,7 +77,7 @@ class parser():
         value[8] = float(value[8])
         value[8] = value[8] / 10000
         return value
-    
+
     def system_event_message(self,msg):
         msg_type = b'S';
         temp = struct.unpack('>HH6sc',msg);
@@ -85,7 +85,7 @@ class parser():
         val = struct.unpack('>cHHQc',new_msg);
         val = list(val);
         return val;
-    
+
     def stock_directory_message(self,msg):
         msg_type = b'R';
         temp = struct.unpack('>4s6s10cI9cIc',msg);
@@ -163,7 +163,7 @@ class parser():
         val = struct.unpack('>sHHQQsI8sI4s',new_msg);
         val = list(val);
         val[8] = float(val[8]);
-        val[8] = val[8]/10000; 
+        val[8] = val[8]/10000;
         return val;
 
     def order_executed_message(self,msg):
@@ -181,7 +181,7 @@ class parser():
         val = struct.unpack('>sHHQQIQsI',new_msg);
         val = list(val);
         val[8] = float(val[8]);
-        val[8] = val[8]/10000; 
+        val[8] = val[8]/10000;
         return val;
 
     def order_cancel_message(self,msg):
@@ -255,7 +255,8 @@ class parser():
 
 if __name__ == '__main__':
 
-    bin_data = gzip.open('C://Users//jloss//PyCharmProjects//trexquant//01302019.NASDAQ_ITCH50.gz', 'r')
+    bin_data = gzip.open('C://Users//jloss//PyCharmProjects//NASDAQ-ITCH-5.0-VWAP-PARSER//01302019.NASDAQ_ITCH50.gz',
+                         'r')
     msg_header = bin_data.read(1)
     out_file = open('parsed_data.csv','w');
     writer = csv.writer(out_file);
@@ -272,7 +273,7 @@ if __name__ == '__main__':
             message = parser.readData(38)
             parsed_data = parser.stock_directory_message(message);
             writer.writerow(parsed_data)
-    
+
         elif msg_header == b'H':
             message = parser.readData(24)
             parsed_data = parser.stock_trading_action(message);
@@ -292,7 +293,7 @@ if __name__ == '__main__':
             message = parser.readData(34)
             parsed_data = parser.mwcb_decline_level_message(message);
             writer.writerow(parsed_data)
-            
+
         elif msg_header == b'W':
             message = parser.readData(11)
             parsed_data = parser.mwcb_status_message(message);
@@ -371,6 +372,6 @@ if __name__ == '__main__':
 
 out_file.close();
 
-# It is mentioned in the problem statement that, I need to write a parser which will parse this entire file. Here, I assumed that I need to parse every type of message and write them in a file seperatly. The computation speed could'vebeen decresed if other messages weren't parsed. To calculate VWAP, only trade_message(T) is useful. Also, if I had avoided writing the code to read messages back into csv, the code would have been much faster. 
+# It is mentioned in the problem statement that, I need to write a parser which will parse this entire file. Here, I assumed that I need to parse every type of message and write them in a file seperatly. The computation speed could'vebeen decresed if other messages weren't parsed. To calculate VWAP, only trade_message(T) is useful. Also, if I had avoided writing the code to read messages back into csv, the code would have been much faster.
 # This code writes data of every hour int0 a different file
-# So, there are 24 files which contains time, stock name and price.
+# So, there are 24 files which contains time, stock name

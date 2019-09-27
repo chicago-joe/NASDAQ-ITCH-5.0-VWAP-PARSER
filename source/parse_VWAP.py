@@ -42,7 +42,7 @@ class parser():
         return df
 
     # This function performs data manipulation before calculating VWAP. Also stores results in txt file. 
-    
+
     def extractData(self, message):
         trades = self.tradeMessage(message)
         parsed_data=[trades[3],trades[7],trades[8],trades[6]]
@@ -85,7 +85,8 @@ class parser():
 
 if __name__ == '__main__':
 
-    bin_data = gzip.open('C://Users//jloss//PyCharmProjects//trexquant//01302019.NASDAQ_ITCH50.gz', 'r')
+    bin_data = gzip.open('C://Users//jloss//PyCharmProjects//NASDAQ-ITCH-5.0-VWAP-PARSER//01302019.NASDAQ_ITCH50.gz',
+                         'r')
     msg_header = bin_data.read(1)
     # out_file = open('parsed_data.csv','w');
     # writer = csv.writer(out_file);

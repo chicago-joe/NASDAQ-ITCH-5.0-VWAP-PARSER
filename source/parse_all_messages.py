@@ -255,7 +255,8 @@ class parser():
 
 if __name__ == '__main__':
 
-    bin_data = gzip.open('C://Users//jloss//PyCharmProjects//trexquant//01302019.NASDAQ_ITCH50.gz', 'r')
+    bin_data = gzip.open('C://Users//jloss//PyCharmProjects//NASDAQ-ITCH-5.0-VWAP-PARSER//01302019.NASDAQ_ITCH50.gz',
+                         'r')
     msg_header = bin_data.read(1)
     out_file = open('parsed_data.csv','w');
     writer = csv.writer(out_file);
@@ -374,5 +375,3 @@ out_file.close();
 # It is mentioned in the problem statement that, I need to write a parser which will parse this entire file. Here, I assumed that I need to parse every type of message and write them in a file seperatly. The computation speed could'vebeen decresed if other messages weren't parsed. To calculate VWAP, only trade_message(T) is useful. Also, if I had avoided writing the code to read messages back into csv, the code would have been much faster. 
 # This code writes data of every hour int0 a different file
 # So, there are 24 files which contains time, stock name and price.
-def temp():
-    return
