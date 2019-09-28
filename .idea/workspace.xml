@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b71cdd32-bd14-4731-9733-0bd4d3a4686c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/complete parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/complete parser.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/source/complete parser.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/complete parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/complete parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/output/04.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/output/05.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/output/06.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/output/07.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/output/08.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/parsed_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/parsed_data.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,12 +32,63 @@
       <file leaf-file-name="complete parser.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/complete parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+            <state relative-caret-position="287">
+              <caret line="69" column="24" lean-forward="true" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parse_all_messages.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/parse_all_messages.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-228">
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parsed_data.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/parsed_data.txt">
+          <provider selected="true" editor-type-id="LargeFileEditor" />
+        </entry>
+      </file>
+      <file leaf-file-name="parse_all_messages.pyx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/parse_all_messages.pyx">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="parse_VWAP.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/parse_VWAP.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-456" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="parse_VWAP.pyx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/parse_VWAP.pyx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-912" />
           </provider>
         </entry>
       </file>
@@ -50,6 +105,7 @@
       <find>calculate_vwap</find>
       <find>'A'</find>
       <find>writer</find>
+      <find>convert_time</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,15 +235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/parse_all_messages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pandas/io/common.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6745">
@@ -202,10 +249,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/parse_all_messages.pyx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/parse_VWAP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-456" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/parse_all_messages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/parsed_data.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/parse_VWAP.pyx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-912" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/complete parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+        <state relative-caret-position="287">
+          <caret line="69" column="24" lean-forward="true" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

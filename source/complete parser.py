@@ -12,6 +12,7 @@ class parser():
     def __init__(self):
         self.temp = []
         self.flag = None
+        self.TradeHour = False
 
     def readData(self, size):
         read = bin_data.read(size)
@@ -46,7 +47,7 @@ class parser():
         parsed_data=[trades[3],trades[7],trades[8],trades[6]]
         hour=trades[3].split(':')[0]
         print(trades[3])
-
+        min=trades[3].split(':')[1]
         if self.flag is None:
             self.flag = hour
         elif self.flag != hour:
@@ -57,7 +58,9 @@ class parser():
             self.temp = []
             self.flag = None
         else:
-            self.temp.append(parsed_data)
+            # if (int(hour)==9 and int(min)>=30) or (int(hour)>9 and int(hour)<16):
+            if self.TradeHour:
+                self.temp.append(parsed_data)
 
     # This function deals with trade messages. It decodes the 43 byte trade message and extracts details like trade value, time and price.
 
@@ -79,6 +82,10 @@ class parser():
         val = struct.unpack('>cHH6sc',msg);
         val = list(val);
         val[3]=CURR_TIME
+        if chr(val[4])=='Q':
+            self.TradeHour=True
+        if chr(val[4])=='M':
+            self.TradeHour=False
         return val;
 
     def stock_directory_message(self,msg):
@@ -261,7 +268,7 @@ if __name__ == '__main__':
         if msg_header == 'S':
             #message = parser.readData(11)
             parsed_data = parser.system_event_message(message);
-            # writer.writerow(parsed_data)
+            writer.writerow(parsed_data)
 
         elif msg_header == 'R':
             #message = parser.readData(38)
