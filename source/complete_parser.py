@@ -271,7 +271,7 @@ class parser():
 
 if __name__ == '__main__':
 
-    bin_data = gzip.open('C://Users//jloss//PyCharmProjects//NASDAQ-ITCH-5.0-VWAP-PARSER//01302019.NASDAQ_ITCH50.gz','r')
+    bin_data = gzip.open('..//01302019.NASDAQ_ITCH50.gz','r')
     msg_size = int.from_bytes(bin_data.read(2),'big')
 
     # out_file = open('parsed_data.txt','w');

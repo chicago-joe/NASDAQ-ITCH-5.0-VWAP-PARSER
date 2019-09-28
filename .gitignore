@@ -115,3 +115,4 @@ source/parsed_data.csv
 !/01302019.NASDAQ_ITCH50
 !/source/complete_parser.cpp
 !/01302019.NASDAQ_ITCH50.gz
+*.gz
