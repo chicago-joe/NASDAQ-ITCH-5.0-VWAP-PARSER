@@ -82,11 +82,11 @@ class parser():
         val = struct.unpack('>cHH6sc',msg);
         val = list(val);
         val[3]=CURR_TIME
-        if chr(val[4])=='Q':
+        if (val[4])==b'Q':
             self.TradeHour=True
-        if chr(val[4])=='M':
+        if (val[4])==b'M':
             self.TradeHour=False
-        if chr(val[4])=='C':
+        if (val[4])==b'C':
             df = pd.DataFrame(self.temp, columns=['time', 'symbol', 'price', 'volume'])
             if len(df)>0:
                 result = self.calculate_vwap(df)
