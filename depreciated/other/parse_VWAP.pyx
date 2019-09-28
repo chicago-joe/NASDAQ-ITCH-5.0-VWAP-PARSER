@@ -1,13 +1,13 @@
 #Importing packages ...
+import Cython
+import pyximport
+pyximport.install(language_level = 3)
 import csv
 import gzip
 import struct
 import datetime
 import pandas as pd
 import os
-import pyximport
-pyximport.install()
-import cython
 
 #Created a class which parses through the ITCH 5.0 file and calculates VSAP.
 
@@ -26,9 +26,9 @@ class parser():
         time = time.strftime('%H:%M:%S')
         return time
 
-    
+
     # This function calculates VWAP for every trade for every hour.
-    
+
     def calculate_vwap(self, df):
         df['amount'] = df['price'] * df['volume']
         df['time'] = pd.to_datetime(df['time'])
@@ -37,11 +37,11 @@ class parser():
         df['vwap'] = df['vwap'].round(2)
         df = df.reset_index()
         df['time'] = df.apply(lambda x: str(x['time']) + ':00:00', axis=1)
-        df['stock']=df['symbol'].str.decode("utf-8")        
+        df['stock']=df['symbol'].str.decode("utf-8")
         df = df[['time', 'stock', 'vwap']]
         return df
 
-    # This function performs data manipulation before calculating VWAP. Also stores results in txt file. 
+    # This function performs data manipulation before calculating VWAP. Also stores results in txt file.
 
     def extractData(self, message):
         trades = self.tradeMessage(message)
@@ -61,7 +61,7 @@ class parser():
             self.temp.append(parsed_data)
 
     # This function deals with trade messages. It decodes the 43 byte trade message and extracts details like trade value, time and price.
-    
+
     def tradeMessage(self, msg):
         msg_type = b'P'
         temp = struct.unpack('>4s6sQcI8cIQ', msg)
@@ -75,7 +75,7 @@ class parser():
         value[8] = float(value[8])
         value[8] = value[8] / 10000
         return value
-    
+
 
 
 
@@ -100,7 +100,7 @@ if __name__ == '__main__':
 
         elif msg_header == b'R':
             message = parser.readData(38)
-    
+
         elif msg_header == b'H':
             message = parser.readData(24)
 
@@ -112,7 +112,7 @@ if __name__ == '__main__':
 
         elif msg_header == b'V':
             message = parser.readData(34)
-            
+
         elif msg_header == b'W':
             message = parser.readData(11)
 
@@ -158,7 +158,5 @@ if __name__ == '__main__':
             message = parser.readData(19)
 
         msg_header = bin_data.read(1)
-
     bin_data.close()
 
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					

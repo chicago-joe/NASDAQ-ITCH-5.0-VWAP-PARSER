@@ -105,3 +105,13 @@ venv.bak/
 01302019.NASDAQ_ITCH50
 01302019.NASDAQ_ITCH50.gz
 source/parsed_data.csv
+/depreciated/
+/.idea/
+/source/build/
+/source/output/
+/source/complete_parser.c
+/source/complete_parser.cp37-win_amd64.pyd
+!/source/setup.cpp
+!/01302019.NASDAQ_ITCH50
+!/source/complete_parser.cpp
+!/01302019.NASDAQ_ITCH50.gz
