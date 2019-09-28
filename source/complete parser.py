@@ -86,6 +86,13 @@ class parser():
             self.TradeHour=True
         if chr(val[4])=='M':
             self.TradeHour=False
+        if chr(val[4])=='C':
+            df = pd.DataFrame(self.temp, columns=['time', 'symbol', 'price', 'volume'])
+            if len(df)>0:
+                result = self.calculate_vwap(df)
+                result.to_csv(os.path.join('.', 'output', str(self.flag) + '.csv'), sep=',', index=False)
+            self.temp = []
+            self.flag = None
         return val;
 
     def stock_directory_message(self,msg):

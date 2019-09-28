@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b71cdd32-bd14-4731-9733-0bd4d3a4686c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/complete parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/complete parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/output/04.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/output/05.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/output/06.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/output/07.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/output/08.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/parsed_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/parsed_data.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +25,8 @@
       <file leaf-file-name="complete parser.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/complete parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="69" column="24" lean-forward="true" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+            <state relative-caret-position="325">
+              <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -99,13 +92,13 @@
       <find>s</find>
       <find>'s'</find>
       <find>system_event_message</find>
-      <find>'p'</find>
       <find>tradeMessage</find>
       <find>extractData</find>
       <find>calculate_vwap</find>
       <find>'A'</find>
       <find>writer</find>
       <find>convert_time</find>
+      <find>'p'</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -288,8 +281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/complete parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="69" column="24" lean-forward="true" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+        <state relative-caret-position="325">
+          <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
