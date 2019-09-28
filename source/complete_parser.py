@@ -1,3 +1,9 @@
+import Cython
+import numpy
+import pyximport
+pyximport.install(setup_args={"script_args":["--compiler=mingw32"],
+                              "include_dirs":numpy.get_include()},
+                  reload_support=True,language_level = 3)
 import gzip
 import struct
 import datetime
@@ -5,9 +11,8 @@ import pandas as pd
 import os
 import csv
 import math
-import cython
-import pyximport
-pyximport.install()
+
+
 
 class parser():
 
@@ -55,7 +60,7 @@ class parser():
             df = pd.DataFrame(self.temp, columns=['time', 'symbol', 'price', 'volume'])
             if len(df)>0:
                 result = self.calculate_vwap(df)
-                result.to_csv(os.path.join('.', 'output', str(self.flag) + '.csv'), sep=',', index=False)
+                # result.to_csv(os.path.join('.', 'output', str(self.flag) + '.csv'), sep=',', index=False)
                 print(result)
                 print("=======================================")
             else:
@@ -97,7 +102,7 @@ class parser():
             df = pd.DataFrame(self.temp, columns=['time', 'symbol', 'price', 'volume'])
             if len(df)>0:
                 result = self.calculate_vwap(df)
-                result.to_csv(os.path.join('.', 'output', str(self.flag) + '.csv'), sep=',', index=False)
+                # result.to_csv(os.path.join('.', 'output', str(self.flag) + '.csv'), sep=',', index=False)
             self.temp = []
             self.flag = None
         return val;
@@ -266,12 +271,11 @@ class parser():
 
 if __name__ == '__main__':
 
-    bin_data = gzip.open('../../01302019.NASDAQ_ITCH50.gz',
-                         'r')
+    bin_data = gzip.open('C://Users//jloss//PyCharmProjects//NASDAQ-ITCH-5.0-VWAP-PARSER//01302019.NASDAQ_ITCH50.gz','r')
     msg_size = int.from_bytes(bin_data.read(2),'big')
 
-    out_file = open('parsed_data.txt','w');
-    writer = csv.writer(out_file);
+    # out_file = open('parsed_data.txt','w');
+    # writer = csv.writer(out_file);
 
     parser = parser()
 
@@ -383,4 +387,4 @@ if __name__ == '__main__':
         msg_size = int.from_bytes(bin_data.read(2),'big')
 
     bin_data.close()
-    out_file.close();
+    # out_file.close();

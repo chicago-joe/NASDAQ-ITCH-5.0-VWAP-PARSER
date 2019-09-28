@@ -2,116 +2,80 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b71cdd32-bd14-4731-9733-0bd4d3a4686c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/depreciated/cyparser.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/depreciated/cyparser.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/depreciated/cython wip/build/lib.win-amd64-3.7/parser.cp37-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/depreciated/cython wip/build/lib.win-amd64-3.7/util.cp37-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/depreciated/out/c_func.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/depreciated/out/c_func.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/depreciated/out/c_func.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/depreciated/out/cyparser2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/depreciated/out/cyparser2.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/complete_parser.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/cythonrun.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/setup.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nasdaq2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nasdaq2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NQTVITCHspecification.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doc/NQTVITCHspecification.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/build/temp.win-amd64-3.7/Release/parser.cp37-win_amd64.exp" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/build/temp.win-amd64-3.7/Release/parser.cp37-win_amd64.exp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/build/temp.win-amd64-3.7/Release/util.cp37-win_amd64.exp" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/build/temp.win-amd64-3.7/Release/util.cp37-win_amd64.exp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/parser.c" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/parser.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/parser.cp37-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/parser.cp37-win_amd64.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/parser.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/parser.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/util.c" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/util.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/util.cp37-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/util.cp37-win_amd64.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/util.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/util.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/complete parser.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/complete parser.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/complete_parser.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/complete_parser.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/complete_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/complete_parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/complete_parser.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/source/complete_parser.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/parsed_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/parsed_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/parse_VWAP.c" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/other/parse_VWAP.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/parse_VWAP.py" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/other/parse_VWAP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/parse_VWAP.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/other/parse_VWAP.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/parse_all_messages.c" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/other/parse_all_messages.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/parse_all_messages.py" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/other/parse_all_messages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/parse_all_messages.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/other/parse_all_messages.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="complete_parser.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/complete_parser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1121">
-              <caret line="143" column="41" lean-forward="true" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="complete_parser.pyx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/complete_parser.pyx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="46" column="23" selection-end-line="386" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parse_VWAP.pyx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/parse_VWAP.pyx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="97" column="40" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>s</find>
-      <find>'s'</find>
-      <find>system_event_message</find>
-      <find>tradeMessage</find>
-      <find>extractData</find>
-      <find>calculate_vwap</find>
-      <find>'A'</find>
-      <find>writer</find>
-      <find>'p'</find>
-      <find>convert_time</find>
-      <find>vol</find>
-    </findStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
       <list>
-        <option value="$PROJECT_DIR$/source/complete parser.ipynb" />
-        <option value="$PROJECT_DIR$/source/complete parser.py" />
-        <option value="$PROJECT_DIR$/source/complete_parser.pyx" />
-        <option value="$PROJECT_DIR$/source/complete_parser.py" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Course" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="nasdaq2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nasdaq2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nasdaq2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nasdaq2" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1RTFRWYTVlzCI1SXaSvMjp9Msh4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.python" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jloss\PyCharmProjects\NASDAQ-ITCH-5.0-VWAP-PARSER\doc" />
+      <recent name="C:\Users\jloss\PyCharmProjects\NASDAQ-ITCH-5.0-VWAP-PARSER\depreciated" />
+      <recent name="C:\Users\jloss\PyCharmProjects\NASDAQ-ITCH-5.0-VWAP-PARSER\depreciated\cython wip\out" />
+      <recent name="C:\Users\jloss\PyCharmProjects\NASDAQ-ITCH-5.0-VWAP-PARSER\source\other" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\OneDrive\学习\jo\nasdaq\nasdaq2\source" />
     </key>
@@ -128,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.complete_parser.pyx">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <module name="nasdaq2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,40 +105,187 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="F:\OneDrive\学习\jo\nasdaq\nasdaq2\source\complete_parser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
+    <configuration name="complete_parser.pyx" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nasdaq2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/complete_parser.pyx" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cyparser2.pyx" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nasdaq2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\jloss\PyCharmProjects\NASDAQ-ITCH-5.0-VWAP-PARSER\depreciated\cython wip\out\cyparser2.pyx" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cyparser.pyx" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nasdaq2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\jloss\PyCharmProjects\NASDAQ-ITCH-5.0-VWAP-PARSER\depreciated\cyparser.pyx" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cythonrun" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nasdaq2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/cythonrun.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nasdaq2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.complete_parser.pyx" />
+        <item itemvalue="Python.cythonrun" />
+        <item itemvalue="Python.cyparser2.pyx" />
+        <item itemvalue="Python.cyparser.pyx" />
+        <item itemvalue="Python.setup" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25237092" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-    </layout>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1569683170855</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569683170855</updated>
+      <workItem from="1569683172007" duration="17623000" />
+    </task>
+    <servers />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="cython-line">
+          <url>file://$PROJECT_DIR$/depreciated/cyparser.pyx</url>
+          <line>88</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="cython-line">
+          <url>file://$PROJECT_DIR$/source/complete_parser.pyx</url>
+          <line>54</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="cython-line">
+          <url>file://$PROJECT_DIR$/source/complete_parser.pyx</url>
+          <line>40</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="cython-line">
+          <url>file://$PROJECT_DIR$/source/complete_parser.pyx</url>
+          <line>311</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -182,106 +293,12 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="36" />
     </breakpoint-manager>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/complete_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/complete_parser.pyx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/parse_VWAP.pyx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
-          <caret line="97" column="40" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pandas/io/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6745">
-          <caret line="396" selection-start-line="396" selection-end-line="396" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="321" selection-start-line="321" selection-end-line="321" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/parse_all_messages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/parse_VWAP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/parse_all_messages.pyx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1596" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/parse_VWAP.pyx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="97" column="40" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/complete parser.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/complete_parser.pyx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="46" column="23" selection-end-line="386" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/complete_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="143" column="41" lean-forward="true" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/NASDAQ_ITCH_5_0_VWAP_PARSER$cyparser_pyx.coverage" NAME="cyparser.pyx Coverage Results" MODIFIED="1569688252273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/NASDAQ_ITCH_5_0_VWAP_PARSER$cythonrun.coverage" NAME="cythonrun Coverage Results" MODIFIED="1569695209235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/NASDAQ_ITCH_5_0_VWAP_PARSER$complete_parser_pyx.coverage" NAME="complete_parser.pyx Coverage Results" MODIFIED="1569700441846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
+    <SUITE FILE_PATH="coverage/NASDAQ_ITCH_5_0_VWAP_PARSER$setup.coverage" NAME="setup Coverage Results" MODIFIED="1569686413950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source" />
   </component>
 </project>
