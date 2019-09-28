@@ -2,45 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b71cdd32-bd14-4731-9733-0bd4d3a4686c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/depreciated/cyparser.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/depreciated/cyparser.pyx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/depreciated/cython wip/build/lib.win-amd64-3.7/parser.cp37-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/depreciated/cython wip/build/lib.win-amd64-3.7/util.cp37-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/depreciated/out/c_func.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/depreciated/out/c_func.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/depreciated/out/c_func.pyx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/depreciated/out/cyparser2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/depreciated/out/cyparser2.pyx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/complete_parser.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/cythonrun.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/setup.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nasdaq2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nasdaq2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NQTVITCHspecification.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doc/NQTVITCHspecification.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/build/temp.win-amd64-3.7/Release/parser.cp37-win_amd64.exp" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/build/temp.win-amd64-3.7/Release/parser.cp37-win_amd64.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/build/temp.win-amd64-3.7/Release/util.cp37-win_amd64.exp" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/build/temp.win-amd64-3.7/Release/util.cp37-win_amd64.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/parser.c" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/parser.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/parser.cp37-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/parser.cp37-win_amd64.pyd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/parser.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/parser.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/util.c" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/util.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/util.cp37-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/util.cp37-win_amd64.pyd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/depreciated/cython wip/util.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/cython wip/util.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/complete parser.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/complete parser.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/complete_parser.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/complete_parser.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/complete_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/complete_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/complete_parser.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/source/complete_parser.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/parse_VWAP.c" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/other/parse_VWAP.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/parse_VWAP.py" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/other/parse_VWAP.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/parse_VWAP.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/other/parse_VWAP.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/parse_all_messages.c" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/other/parse_all_messages.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/parse_all_messages.py" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/other/parse_all_messages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/parse_all_messages.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/depreciated/other/parse_all_messages.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/akshett.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/complete parser.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/cyparser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/cyparser.pyx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/itch.hdf5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/ndq_stocklocate_20190130.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/og.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/other/parse_VWAP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/other/parse_VWAP.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/other/parse_VWAP.pyx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/other/parse_all_messages.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/other/parse_all_messages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/other/parse_all_messages.pyx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/out/c_func.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/out/c_func.pxd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/out/c_func.pyx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/out/cyparser2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/out/cyparser2.pyx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/parsed_data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/prickleparse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/v4.1/Itch.test1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/v4.1/Itch.test2.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/v4.1/Itch41.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/v4.1/Itch41Tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/v4.1/createItch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/depreciated/v4.1/parseItch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/complete_parser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/complete_parser.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/complete_parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/cythonrun.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/setup.cpp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,6 +114,9 @@
       <module name="nasdaq2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -138,6 +136,9 @@
       <module name="nasdaq2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -253,7 +254,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
