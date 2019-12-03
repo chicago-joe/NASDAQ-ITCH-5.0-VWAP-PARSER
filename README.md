@@ -10,9 +10,28 @@ filename:
 
 
 #
+#### REQUIREMENTS
+```
+pip install -U Cython, numpy, pandas, datetime
+```
+
 #### INSTRUCTIONS
-1. `cd /source`
+Please make sure to adjust bin_data (gzip file location) in the .py and
+.pyx files.
 
-2. `python setup.py build_ext --inplace`
+Output files are written in csv format to the /source/output folder.
 
-3. `python VWAP.pyx`
+**Step 1**
+```
+cd /source
+```
+
+**Step 2**
+``` 
+python setup.py build_ext --inplace
+```
+
+**Step 3**
+```
+python complete_parser.pyx
+```

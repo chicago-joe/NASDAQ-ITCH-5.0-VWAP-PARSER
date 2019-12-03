@@ -103,16 +103,16 @@ venv.bak/
 # mypy
 .mypy_cache/
 01302019.NASDAQ_ITCH50
-01302019.NASDAQ_ITCH50.gz
-source/parsed_data.csv
+data/01302019.NASDAQ_ITCH50.gz
+dep/parsed_data.csv
 /depreciated/
 /.idea/
-/source/build/
-/source/output/
-/source/complete_parser.c
-/source/complete_parser.cp37-win_amd64.pyd
-!/source/setup.cpp
+/dep/build/
+/dep/output/
+/dep/complete_parser.c
+/dep/complete_parser.cp37-win_amd64.pyd
+!/dep/setup.cpp
 !/01302019.NASDAQ_ITCH50
-!/source/complete_parser.cpp
-!/01302019.NASDAQ_ITCH50.gz
+!/dep/complete_parser.cpp
+!/data/01302019.NASDAQ_ITCH50.gz
 *.gz
