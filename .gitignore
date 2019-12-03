@@ -116,3 +116,4 @@ dep/parsed_data.csv
 !/dep/complete_parser.cpp
 !/data/01302019.NASDAQ_ITCH50.gz
 *.gz
+data/order_book.h5

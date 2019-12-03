@@ -65,7 +65,6 @@ def may_be_download(url):
 file_name = may_be_download(urllib.parse.urljoin(FTP_URL, SOURCE_FILE))
 date = file_name.name.split('.')[0]
 
-
 # put parser format strings (given in ITCH5.0 pdf) into format dictionaries within class:
 class format_strings:
     event_codes = { 'O':'Start of Messages',
@@ -92,12 +91,10 @@ class format_strings:
             ('price_8', 8):'Q',
     }
 
-
 # the message_types.xlxs contains type specifications as laid out by ITCH documentation:
 message_data = (pd.read_excel('C://Users//jloss//PyCharmProjects//NASDAQ-ITCH-5.0-VWAP-PARSER//src//message_types.xlsx',
                               sheet_name = 'messages',
                               encoding = 'latin1').sort_values('id').drop('id', axis = 1))
-
 
 # basic string cleaning:
 def clean_message_types(df):
@@ -112,7 +109,6 @@ def clean_message_types(df):
     df.notes = df.notes.str.strip()
     df['message_type'] = df.loc[df.name == 'message_type', 'value']
     return df
-
 
 # read message types from xlsx and run string cleaning function
 message_types = clean_message_types(message_data)
@@ -200,13 +196,13 @@ def store_messages(m):
                          min_itemsize = s,
                          data_columns = dc)
 
-#
 # if os.path.exists(itch_store):
 #     pass
 # else:
 messages = { }
 message_count = 0
 message_type_counter = Counter()
+
 # simplified version to process the bin file and produce the parsed orders by msg type:
 # if itch_store.exists()
 start = time()
@@ -248,17 +244,15 @@ with file_name.open('rb') as data:
             store_messages(messages)
             messages = { }
 
-
 print("PARSE FINISHED IN: ", timedelta(seconds = time() - start))
 
-## build
-# order book flow for the given day
+
+## build order book flow for the given day
 print("\n----------------------------------------------")
 stock = 'GE'
 order_dict = { -1:'sell', 1:'buy' }
 
 print("=====  RECONSTRUCTING ORDER FLOW  =====\nDATE:  ", date, "\nTICKER:  ", stock)
-
 
 # get all messages for the chosen stock
 def get_messages(date, stock = stock):
@@ -329,7 +323,6 @@ def add_orders(orders, buysell, nlevels):
             break
     return orders, new_order
 
-
 # save orders
 def save_orders(orders, append = False):
     cols = ['price', 'shares']
@@ -345,16 +338,10 @@ def save_orders(orders, append = False):
                 store.put(key, df.set_index('timestamp'))
 
 
-## iterate over all ITCH msgs to process orders/replacement orders as specified:
-
 # if os.path.exists(order_book_store):
 #     pass
-# else:
 
-
-
-
-# print msg info
+## iterate over all ITCH msgs to process orders/replacement orders as specified:
 messages = get_messages(date = date)
 print("\n =====  ORDER MESSAGES SUMMARY:  =====\n")
 messages.info(null_counts = True)
@@ -364,19 +351,11 @@ with pd.HDFStore(order_book_store) as store:
     store.put(key, messages)
     print("\n =====  ORDERBOOK STORAGE FORMAT:  =====\n ", store.info(), "\n")
 
-
-
-
-
-
 trades = get_trades(messages)
 # print(trades.info())
 
 with pd.HDFStore(order_book_store) as store:
     store.put('{}/trades'.format(stock), trades)
-
-
-
 
 order_book = { -1:{ }, 1:{ } }
 current_orders = { -1:Counter(), 1:Counter() }
@@ -467,7 +446,6 @@ plt.show()
 plt.close()
 
 ## ANALYZE ORDER BOOK DEPTH
-# utc_offset = timedelta(hours=4)
 depth = 50
 buy_per_min = (buy.groupby([pd.Grouper(key = 'timestamp', freq = 'Min'), 'price'])
                .shares
@@ -480,7 +458,6 @@ buy_per_min = (buy.groupby([pd.Grouper(key = 'timestamp', freq = 'Min'), 'price'
                .apply(lambda x:x.nlargest(columns = 'price', n = depth))
                .reset_index())
 buy_per_min.timestamp = buy_per_min.timestamp.values.astype(int)
-# buy_per_min.timestamp = buy_per_min.timestamp.add(utc_offset).values.astype(int)
 buy_per_min.info()
 
 sell_per_min = (sell.groupby([pd.Grouper(key = 'timestamp', freq = 'Min'), 'price'])
@@ -493,7 +470,6 @@ sell_per_min = (sell.groupby([pd.Grouper(key = 'timestamp', freq = 'Min'), 'pric
                 .groupby(level = 'timestamp', as_index = False, group_keys = False)
                 .apply(lambda x:x.nsmallest(columns = 'price', n = depth))
                 .reset_index())
-# sell_per_min.timestamp = sell_per_min.timestamp.values.astype(int)
 sell_per_min.info()
 
 with pd.HDFStore(order_book_store) as store:
@@ -502,9 +478,7 @@ trades.price = trades.price.mul(1e-4)
 trades = trades[trades.cross == 0].between_time(market_open, market_close)
 
 trades_per_min = (trades.resample('Min').agg({ 'price':'mean', 'shares':'sum' }))
-# trades_per_min.index = trades_per_min.index.to_series().add(utc_offset).values.astype(int)
 trades_per_min.info()
-
 
 ######################################################################################################
 ## ANALYZE ORDER BOOK DATA
@@ -526,7 +500,6 @@ with pd.HDFStore(order_book_store) as store:
 trades.price = trades.price.mul(1e-4)
 trades = trades[trades.cross == 0]
 trades = trades.between_time(market_open, market_close).drop('cross', axis = 1)
-# trades.info()
 
 # Trade data is in nanosecs, the noise causes price oscillations between bid-ask prices
 tick_bars = trades.copy()
@@ -538,24 +511,6 @@ plt.tight_layout()
 plt.savefig(figure_path / 'tick_bars.png', dpi = 300)
 plt.show()
 plt.close()
-
-
-# TODO: fix this shit
-# fig, axes = plt.plot(nrows = 2, sharex = True, figsize = (15, 8))
-# axes[0].plot(df.index, df[price])
-# axes[1].bar(df.index, df[vol], width = 1 / (len(df.index)), color = 'r')
-#
-# # formatting
-# xfmt = mpl.dates.DateFormatter('%H:%M')
-# axes[1].xaxis.set_major_locator(mpl.dates.HourLocator(interval = 3))
-# axes[1].xaxis.set_major_formatter(xfmt)
-# axes[1].get_xaxis().set_tick_params(which = 'major', pad = 25)
-# axes[0].set_title('Price Chart', fontsize = 14, loc = 'left')
-# axes[1].set_title('Volume Chart', fontsize = 14, loc = 'left')
-# fig.autofmt_xdate()
-# fig.suptitle(suptitle)
-# plt.subplots_adjust(top = 0.9)
-# plt.show()
 
 # Normality Test for tick returns
 print("\n\nNormality Test for Tick Returns:\n ", normaltest(tick_bars.price.pct_change().dropna()))
@@ -578,7 +533,6 @@ def price_volume(df, price = 'vwap', vol = 'vol', suptitle = stock):
     plt.subplots_adjust(top = 0.9)
     plt.show()
 
-
 ######################################################################################################
 # resample data to create time bars and compare normality tests with tick data
 def get_bar_stats(agg_trades):
@@ -587,7 +541,6 @@ def get_bar_stats(agg_trades):
     vol = agg_trades.shares.sum().to_frame('vol')
     txn = agg_trades.shares.size().to_frame('txn')
     return pd.concat([ohlc, vwap, vol, txn], axis = 1)
-
 
 # create 1 min time bars
 resampled = trades.resample('1Min')
